@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leticia's Web Projects</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon_leticia-2.svg" type="image/svg+xml">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Sofia|Cookie|Paytone+One&effect=neon|emboss|shadow-multiple|3D|Fire" rel="stylesheet">
+	
+	<style>
+	.body{
+		display: flex;
+		}
+	h1.cookie{
+		font-family: 'Cookie', cursive;
+	}
+	h1.sofia{
+		font-family: 'Sofia', cursive;
+	}
+		
+	.fullscreen-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .fullscreen-container.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fullscreen-image {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .close-button:hover {
+      color: #ccc;
+    }
+		
+	/* Estilos para o overlay de tela cheia */
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transição suave */
+  }
+
+  .fullscreen-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; /* Mostra imediatamente */
+  }
+
+  .fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+  /* Estilos para o botão de fechar */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 10000;
+  }
+		
+		.project-list li{
+			display: flex;
+		}
+		
+	.project-card p{
+		color: black;
+		padding: 12px;
+		text-align: justify;
+		padding-bottom: 20px;
+		font-family: var(--ff-roboto);
+		line-height: 1.4em;
+	}
+		
+	.project-card p .title{
+		font-variant-caps: small-caps;
+		font-size: 1.1em;
+		padding: 0.8em;
+		text-align: center;
+	}
+  </style>
+  
+</head>
+
+<body id="top" class="dark_theme">
+
+	<header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo" style="font-size: 3em;">
+        <a href="index.html">&lt;LA&gt;</a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="index.html#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+             <a href="index.html#portfolio" class="navbar-link">Portfolio</a> 
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+	<section class="project" id="portfolio" style="margin-bottom: 0; padding-bottom:0">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Websites &amp; Applications</p>
+
+              <h2 class="h3 section-title" style="font-size: 1.5em; padding: 0.3em">Check out my web design and mobile application projects!</h2>
+
+              <p class="section-text" style="padding:0.3em; text-align:justify">
+                Projects in this section were developed for different purposes and  for several different companies, but most of them were created using HTML for page structure, CSS for style information and JavaScript as main Programming Language. 
+              </p>
+
+            </div>
+          </li>
+			
+			<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/fomappphone.png" class="w-100"
+                  alt="Fomapp Vegan Appk Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Fomapp Vegan App Project</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Fomapp App Project - Part I:</span>
+				The Fomapp Vegan App project is a new mobile application dedicated to vegan lifestyle enthusiasts. The app aims to provide users with resources, recipes, restaurant recommendations based on their location, and community support, emphasizing sustainability and ethical living. The app features a distinctive logo and color palette that resonate with the target audience. It is available for both Android and iOS users.
+				</p>
+            </a>
+          </li>
+			
+			<li>
+            <a href="#" class="project-card">
+              <figure class="card-banner">
+                <img src="projects_coding/telas.jpg" class="w-100"
+                  alt="Fomapp Vegan App Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Fomapp Vegan App Project</h3>
+              </div>
+				
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Fomapp App Project - Part II:</span>
+				The Fomapp Vegan App is a new mobile application for vegan lifestyle enthusiasts. The second part of this project involved the complete development of all the app's pages to provide users with relevant resources, recipes, restaurant recommendations based on location, and vegan community support, all while emphasizing sustainability and ethical living. The app is available for both Android and iOS users, with UX and UI concepts widely applied throughout the project.
+				</p>
+            </a>
+			</li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/finans.png" class="w-100" alt="Finans - Finance Company">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Finans Website</h3>
+              </div>
+				
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title"> Finans Project - Part I:</span>
+					This project involved developing a website for Finans, a financial management company. The website is fully responsive and was created with HTML, CSS, JavaScript, and Bootstrap. This is the initial page of the website. The full project is presented in Part II, which is also included in this section of the portfolio.
+				</p>
+            </a>
+			</li>
+			
+			<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/finanstotal.png" class="w-100"
+                  alt="Finans Website - Part II ">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Finans Website - Part II: Full Project</h3>
+				</div>
+                <p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title"> Finans Project - Part II:</span>
+					This is the full project for Finans, a financial management company. The website aims to help clients gain a better understanding of where to invest their money and how to manage their savings. It is a responsive webiste, allowing these tasks to be performed on mobile devices as well. It was developed with HTML, CSS, JavaScript, and Bootstrap.
+				</p>
+            </a>
+          </li>
+			
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/noticias.png" class="w-100" alt="Noticias Cidade - News Website" class="fullscreen-image" id="fullscreenImage">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Noticias Cidade Website</h3>
+              </div>
+				
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title"> Noticias Cidade Project:</span>
+					This is a local breaking news Brazilian website, developed as a platform to deliver real-time updates and information pertinent to the largest cities in Brazil. The main menu allows residents to choose from different topics and easily find information, making the platform user-friendly and intuitive.
+				</p>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/tecblogfull.png" class="w-100"
+                  alt="TecBlog Website">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Tecblog Website</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title"> TecBlog Project:</span>
+					Tecblog is a simple and intuitive platform that delivers the latest global technology news with clarity and readability. Its fully responsive design ensures that updates are seamlessly accessible across all devices. The project was developed with HTML, CSS and JavaScript.
+				</p>
+            </a>
+          </li>
+			
+          <li>
+            <a href="#" class="project-card">
+              <figure class="card-banner">
+                <img src="projects_coding/chale.png" class="w-100"
+                  alt="Chale Hotel - Nature Hotel &amp; Luxury Resort">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Chale Hotel - Nature Hotel &amp; Luxury Resort</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Chale Hotel Project:</span>
+					A Nature Hotel &amp; Luxury Resort website represents the business of a family that has been providing a dreamy and relaxing experience to many visitors for five generations. This platform was specially created for hotel guests and day-pass spa visitors, allowing them to easily book reservations, purchase tickets, check seasonal events sponsored by Chale Hotel, and browse through all amenities and fun family activities offered. Concepts of UI and UX were actively applied during the development of this project.
+				</p>
+            </a>
+          </li>
+			
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/backgen.png" class="w-100"
+                  alt="Color Harmony Generator">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Color Harmony Generator</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Color Harmony Generator Project:</span>
+				In the dynamic world of web design, color selection is not just about aesthetics—it's a critical component that influences user experience and brand identity. Understanding this, the Color Harmony Generator was created: a state-of-the-art background generator website designed specifically for web designers who want to match and harmonize colors effortlessly, with features for cohesive design, real-time previews, and background simulations.
+				</p>
+            </a>
+          </li>
+			
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/museu.png" class="w-100"alt="Museu Nacional Brasileiro">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Brazilian National Museum Website</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Museu Nacional Project:</span>
+					The Brazilian National Museum website receives a lot of traffic every day, primarily because it is also used as the platform where visitors purchase tickets and check current events, such art exhibitions happening at the museum. The platform features an intuitive user interface, allowing visitors to navigate easily and enjoy a smooth browsing experience.
+				</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/anna.png" class="w-100"
+                  alt="Anna's Modeling Portfolio">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Anna's Model Portfolio</h3>
+              </div>
+				
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Model Portfolio Project:</span>
+					This website was developed to showcase the portfolio of models from a modeling agency in Brazil. The agency needed a webpage where clients could view and select models that best suited their needs. This example illustrates the webpage's structure, which allows for easy updates and modifications to accommodate each model's details and professional photos. It was designed using HTML, CSS, and JavaScript. The final result was highly effective, enabling the agency to present their models to potential clients efficiently.
+				</p>
+
+            </a>
+          </li>
+			
+			<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_coding/flordaidade.png" class="w-100"
+                  alt="Flor da Idade Website Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Flor da Idade Website Project</h3>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Flor da Idade - Website Project:</span>
+				This web design project is dedicated to the senior community. The buttons are enlarged and well-highlighted to help older adults find topics of interest, thereby improving their user experience while browsing. The website, Flor da Idade, which translates to "Ageless Flower," seeks to celebrate and empower individuals in their golden years through insightful content and engaging narratives. It aims to attract a broader readership and strengthen its position as a leading voice in senior living and lifestyle publications.
+				</p>
+            </a>
+          </li>
+
+          <li>
+          	<!-- COLOCAR AQUI DIGITAL ILLUSTRATION LINK -->
+			 <div class="w-100 load-more" >
+            <a href="./web_design.html" target="_blank">Load more projects</a>
+			 </div>
+          </li>
+
+        </ul>
+
+      </section>
+	
+<!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+			
+          <div style="padding-left: 3em">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title" style="font-size: 1.5em">Do you have a web design or mobile application project in mind?</h2>
+
+          <p class="section-text">
+            It will be a pleasure to discuss future projects! Get in touch and let me know how the services offered can be useful to you. You will receive a response via email within 2 business days.
+          </p>
+
+          <ul class="contact-list">
+			  
+			<li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:leticia.ands@gmail.com" class="contact-info">leticia.ands@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:9374703278" class="contact-info">(937) 470-32-78</a>
+              </div>
+
+            </li>
+			  
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Location:</h3>
+
+                <address class="contact-info">
+                  Currently located in Cincinnati, OH.
+                </address>
+              </div>
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://www.linkedin.com/in/leticia-webdesigner/" class="contact-social-link" target="_blank">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+        </div>
+		</div>
+
+      </section>
+	
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="index.html">
+          &lt;LA&gt;
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 Leticia's Portfolio. All rights reserved.
+      </p>
+		
+    </div>
+  </footer>
+	
+	<!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+</body>
+</html>

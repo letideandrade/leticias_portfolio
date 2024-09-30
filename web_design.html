@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leticia's Design Projects</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon_leticia-2.svg" type="image/svg+xml">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Sofia|Cookie|Paytone+One&effect=neon|emboss|shadow-multiple|3D|Fire" rel="stylesheet">
+	
+	<style>
+	h1.cookie{
+		font-family: 'Cookie', cursive;
+	}
+	h1.sofia{
+		font-family: 'Sofia', cursive;
+		}
+	/* Estilos para o overlay de tela cheia */
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transição suave */
+  }
+
+  .fullscreen-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; /* Mostra imediatamente */
+  }
+
+  .fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+  /* Estilos para o botão de fechar */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 10000;
+  }
+		
+		.project-list li{
+			display: flex;
+		}
+		
+	.project-card p{
+		color: black;
+		padding: 12px;
+		text-align: justify;
+		padding-bottom: 20px;
+		font-family: var(--ff-roboto);
+		line-height: 1.4em;
+	}
+		
+	.project-card p .title{
+		font-variant-caps: small-caps;
+		font-size: 1.1em;
+		padding: 0.8em;
+		text-align: center;
+	}
+	</style>
+
+</head>
+
+<body id="top" class="dark_theme">
+
+	<header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo" style="font-size: 3em;">
+        <a href="index.html">&lt;LA&gt;</a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="index.html#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+             <a href="index.html#portfolio" class="navbar-link">Portfolio</a> 
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+	<section class="project" id="portfolio" style="margin-bottom: 0; padding-bottom:0">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Graphic Design &amp; Branding Design</p>
+
+              <h2 class="h3 section-title" style="font-size: 1.5em; padding: 0.3em">Explore my Branding Design &amp; Graphic Design projects!</h2>
+
+              <p class="section-text" style="padding:0.3em; text-align: justify">
+
+				The Branding Design projects in this section involved crafting visual identities that represent a company or individual, encompassing logos, color schemes, typography, and overall brand aesthetics. The graphic design projects in this section encompass a wide range of visual communication tasks, including creating posters, advertisements, digital illustrations, and packaging designs, aimed at conveying messages effectively through visual elements and enhancing user experience.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/pri_logo_fundo_creme.jpg" class="w-100" alt="Finans - Finance Company">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Priscila's Bakery - Branding Design</h3>
+
+                <time class="publish-date" datetime="2023-03">March 2023</time>
+              </div>
+				
+				<p style="background-color: hsla(318,62%,93%,1.00)">
+					<span class="title">Priscila's Bakery - Branding Design Project</span>
+					This project was very special to me. A childhood friend of mine, who is highly talented in the baking/pastry field, decided to open her own business. She needed a brand to represent her business and visual identity for her new venture, well as a website to showcase her work and a modile App for customers to browse products and place orders. I was brainstorming for the brand, slogan and logo ideas until she chose this one logo that I had initially sketched by hand on a piece of paper. Then, I recreated the chosen logo using Adobe Illustrator to create a vector graphic, so she could use it for printing purposes in her physical store, on uniforms, and in pamphlets.
+				</p>
+
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/sunlashes.png" class="w-100" alt="Sunlashes Studio Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Sunlashes Studio - Branding Design</h3>
+
+                <time class="publish-date" datetime="2024-04">April 2024</time>
+              </div>
+				
+			<p style="background-color: hsla(40,64%,67%,1.00)">
+				<span class="title">Sunlashes Studio - Branding Design Project</span>
+				This was a branding project requested by a empowered woman who was ready to open her own business, a beauty salon dedicated to eyelashes and eyebrows. The client explained her ideas for how she expected her logo to look like, mentioning sunflowers were really meaningful to her, because she believes they represent good fortune and positive opportunities, so she would like the visual identity of her new company to be a mix of sunflowers and eyelashes, put together in a delicate feminine way, mainly considering her target audience would be mostly women. 
+			</p>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/panera_box.png" class="w-100" alt="Panera's To-Go Box Design Project - Part I">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Panera - Packaging Design Part I</h3>
+
+                <time class="publish-date" datetime="2019-04">April 2019</time>
+              </div>
+				
+			<p style="background-color: hsla(184,32%,83%,1.00)">
+				<span class="title">Panera's To-Go Box Design Project - Part I</span>
+				Panera's To-Go Box design project focused on enhancing the practicality and visual appeal of their takeout packaging. The first part of the project involved defining the layout of the packaging, working on ideation, sketching shapes, and choosing color palettes. The design incorporated Panera's signature colors and original logo prominently, reinforcing brand identity and recognition.
+			</p>
+
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/panera.png" class="w-100" alt="Panera's To-Go Box Design Project - Part II">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Panera - Packaging Design Part II</h3>
+                <time class="publish-date" datetime="2019-04">April 2019</time>
+              </div>
+				
+			<p style="background-color: hsla(184,32%,83%,1.00)">
+				<span class="title">Panera's To-Go Box Design Project - Part II</span>
+				The second part of this project involved testing the packaging, ensuring that the box is sturdy enough to hold the food securely during transportation. It should also be easy to open and close, facilitating convenience for the customer. Overall, the design aimed to elevate the customer experience by marrying functionality with brand aesthetics.
+			</p>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/logosgabi.png" class="w-100" alt="Import Store - Ideation Process">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Import Store - Ideation Process</h3>
+
+                <time class="publish-date" datetime="2024-06">June 2024</time>
+              </div>
+				
+			<p style="background-color: hsla(0,1%,85%,1.00)">
+				<span class="title">Ideation Process to create Trademark</span>
+				Concerning this project, it all started when a creative mom moved to another country and had the opportunity to explore a huge diversity of products of all kinds that she had never seen or used before, products like cosmetics, clothing, toys, even foods. So, she opened a business to sell imported products, shipping lots of products to her homecountry that could only be found abroad. During the project, the ideation process was developed to create a trademark, designing 50 options of logos. The client chose 8 logos she believed matched the idea of her business best, in order to choose one in the near future.
+			</p>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/alice.png" class="w-100"alt="Yazigi School - Event Banner">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Yazigi School - Event Banner</h3>
+
+                <time class="publish-date" datetime="2018-07">July 2018</time>
+              </div>
+			<p style="background-color: hsla(0,1%,85%,1.00)">
+				<span class="title">Banner: Food trucks at Yazigi School</span>
+				Yazigi is a Language School in Brazil, the principal hired a food truck as part of the school engagement strategy for students, creating a fun environment beyond the classroom. The school administration collaborates with local food vendors to bring diverse culinary experiences directly to campus, every week a different type of food. The week of sweets needed its special banner to communicate the event for students and parents.
+			</p>
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/intensivoadulto.jpg" class="w-100"alt="ESL Classes - Event Banner">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">ESL Classes - Event Banner</h3>
+
+                <time class="publish-date" datetime="2019-10">October 2019</time>
+              </div>
+			<p style="background-color: hsla(0,0%,81%,1.00)">
+				<span class="title">Banner: ESL Classes at Yazigi School</span>
+				At Yazigi School, ESL (English as a Second Language) classes are crafted to empower students with language skills for communication in English-speaking environments. This banner was requested by Yazigi School to promote their business, attracting new students to enroll for the upcoming semester, with consideration given to its placement for maximum visibility near school entrances, on the website, or on social media platforms.
+			</p>
+            </a>
+          </li>
+	
+			<li>
+				<a href="#" class="project-card">
+
+				  <figure class="card-banner">
+					<img src="projects_design/flor.png" class="w-100"alt="Flor da Idade Magazine - Branding Project">
+				  </figure>
+
+				  <div class="card-content">
+					<h3 class="h4 card-title">Flor da Idade Magazine - Branding Design</h3>
+
+					<time class="publish-date" datetime="2020-10">October 2020</time>
+				  </div>
+				<p style="background-color: hsla(340,93%,77%,1.00)">
+					<span class="title">Branding Design and Business Card - Flor da Idade Magazine</span>
+					This is a branding project for a Brazilian Magazine with content dedicated to older generations. This project is a meticulous endeavor aimed at redefining and revitalizing its identity to resonate with its audience. Flor da Idade, which translates to "Ageless Flower," seeks to celebrate and empower individuals in their golden years through insightful content and engaging narratives. Flor da Idade aims to attract a broader readership and strengthen its position as a leading voice in senior living and lifestyle publications.
+				</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#" class="project-card">
+				  <figure class="card-banner">
+					<img src="projects_design/party.png" class="w-100" alt="Black &amp; White Party - Banner">
+				  </figure>
+
+				  <div class="card-content">
+					<h3 class="h4 card-title">Black &amp; White Party - Banner</h3>
+					<time class="publish-date" datetime="2022-09">September 2022</time>
+				  </div>
+					
+				<p style="background-color: hsla(224,90%,23%,1.00); color: white">
+					<span class="title">Black &amp; White Party - Graphic Design Project</span>
+					A party banner design for this exciting event: A party at Yazigi School for kids aged 10 to 13 years old, where they can showcase their style and creativity in a chic black and white theme, having the opportunity to engage with other students and enjoy a fun environment.
+				</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#" class="project-card">
+				  <figure class="card-banner">
+					<img src="projects_design/imobiliaria.jpg" class="w-100" alt="Frances Billboard - Advertising Campaign Project">
+				  </figure>
+
+				  <div class="card-content">
+					<h3 class="h4 card-title">Frances Billboard - Advertising Campaign Project</h3>
+					<time class="publish-date" datetime="05-2024">May 2024</time>
+				  </div>
+					
+				<p style="background-color: hsla(210,90%,81%,1.00)">
+					<span class="title"> Frances Billboard - Advertising Campaign Project</span>
+					The advertising campaign for Frances Real Estate Agency included designing billboards to showcase modern apartment buildings, using outdoor advertising strategically to maximize visibility and engagement throughout the city. The  campaign integrated e-mail marketing with strategically placed billboards to effectively reach potential clients and enhance brand recognition.
+				</p>
+				</a>
+			</li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/bookcover.png" class="w-100" alt="Rio - Book Cover Design">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Rio Landscapes - Book Cover Design</h3>
+                <time class="publish-date" datetime="2021-04">April 2021</time>
+              </div>
+				
+				<p style="background-color:hsla(257,17%,63%,1.00)">
+					<span class="title">Rio Landscapes - Book Cover Design</span>
+					The book cover for Rio de Janeiro Landscapes aims to capture the essence and beauty of Brazil's iconic city known for its stunning natural landscapes. The chosen color palette of orange and shades of purple reflects the warmth and beauty of Rio's sunsets. Through blending iconic landmarks, cultural vibrancy, and evocative design elements, the cover serves as an inviting introduction to Rio's diverse and captivating landscapes. Project for CPB Book Publisher.
+				</p>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/unilux.png" class="w-100"
+                  alt="Unilux's Envelopes - Business Stationery">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Unilux's Envelopes - Graphic Design</h3>
+
+                <time class="publish-date" datetime="2022-02">February 2022</time>
+              </div>
+			<p style="background-color: hsla(52,71%,84%,1.00)">
+					<span class="title">Unilux's Envelopes - Business Stationery Project</span>
+					As a leading provider in the luxury goods market, Unilux's envelopes project focused on creating a sophisticated and functional design with brand consistency, ensuring the envelopes align with Unilux's established brand identity through use of colors, logo placement, and typography.
+				</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/fomapp.png" class="w-100"
+                  alt="Fomapp Vegan App - Branding Identity Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Fomapp Vegan App - Branding Identity Project</h3>
+
+                <time class="publish-date" datetime="2020-12">December 2020</time>
+              </div>
+				<p style="background-color: white">
+					<span class="title">Fomapp Vegan App - Branding Identity Project</span>
+					The Fomapp Vegan App branding identity project focused on establishing a cohesive visual identity for a new mobile application dedicated to vegan lifestyle enthusiasts. The app aims to provide users with resources, recipes, recommendations of restaurants based on their location, and community support, emphasizing sustainability and ethical living. This project developed a distinctive logo and color palette that resonates with the target audience.
+				</p>
+            </a>
+          </li>
+			
+		  <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/coloniaferias.jpg" class="w-100"
+                  alt="Summer Camp - Graphic Design Project">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Yazigi Summer Camp - Graphic Design Project</h3>
+
+                <time class="publish-date" datetime="2023-07">July 2023</time>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Yazigi Summer Camp - Graphic Design Project</span>
+					The idea for this banner was to capture the essence of fun, learning, and adventure for students during their summer break. The design aims to be vibrant and engaging, reflecting the energetic atmosphere of the camp activities at Yazigi School.
+				</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/typography.png" class="w-100"
+                  alt="Pride Month - Advertising">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Pride Month - Graphic Design Project</h3>
+
+                <time class="publish-date" datetime="2024-06">June 2024</time>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Pride Month - Graphic Design Project</span>
+					This project was created to celebrate the spirit of inclusivity on the streets of Florianopolis city (Brazil). Typography dances across banners and posters around town, commanding attention and spreading messages of unity and equality. The lyrics of songs were added while shaping the art. For this art piece, the song chosen is "Girls like girls" by Hayley Kiyoko. This project was sponsored by the Floripa City Hall.
+				</p>
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/bgpri.png" class="w-100"
+                  alt="Website Background - Priscila's Bakery">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Website Background - Priscila's Bakery</h3>
+
+                <time class="publish-date" datetime="2023-03">March 2023</time>
+              </div>
+				<p style="background-color: hsla(0,7%,68%,1.00)">
+					<span class="title"> Background for Social Media - Priscila's Bakery</span>
+					This background was designed using vectors in Adobe Illustrator. The colors and typography match the brand's identity. The client requested this background to be used as a Facebook cover and/or as a background for ads on WhatsApp and other social media platforms.
+				</p>
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/game.png" class="w-100"
+                  alt="Board Game Project - Part I">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Board Game Project - Part I</h3>
+
+                <time class="publish-date" datetime="2018-06">June 2018</time>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Board Game Project - Part I: Ideation and Design</span>
+					
+					The purpose of this project was to develop a game that encourages socialization and learning among children aged 10 to 12. This board game serves as a supplementary educational tool for English classes, designed to engage both children with Autism Spectrum Disorder (ASD) and neurotypical children. The goal is to promote inclusive socialization and learning in schools. The game's visual interface was created to be accessible to all students, and the prototype was tested in classes at Yazigi School (an ESL school in Brazil), where both autistic and neurotypical students learn together. The game enhances traditional educational materials by making lessons more enjoyable and interactive. The project aims to benefit both children with special needs and regular children by fostering engagement, promoting socialization, and enhancing knowledge.
+
+				</p>
+            </a>
+          </li>
+			
+		<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="projects_design/gamedesigntesting.png" class="w-100"
+                  alt="Board Game Project - Part II">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Board Game Project - Part II</h3>
+
+                <time class="publish-date" datetime="2018-07">July 2018</time>
+              </div>
+				<p style="background-color: hsla(0,0%,81%,1.00)">
+					<span class="title">Board Game Project - Part II: Testing</span>
+					
+					The second part of this project involved developing the board game prototype for testing and obtaining feedback from players to address possible errors and improve playability before finalizing the project. The prototype was printed on canvas, and the cards were made of 300 gsm paper. The game was tested with four groups of students at Yazigi School. Feedback indicated that all students, including those with special needs (as this project aims to include), were able to play easily, without doubts concerning the game's mechanics. The visual interface was designed to be easily understood by both autistic and neurotypical children, promoting interaction and learning between them. The feedback also confirmed that the game was accessible and effective in fostering interaction and learning, serving as a useful and enjoyable tool to promote knowledge in schools.
+				</p>
+            </a>
+          </li>
+
+          <li>
+          	<!-- COLOCAR AQUI DIGITAL ILLUSTRATION LINK -->
+			 <div class="w-100 load-more" >
+            <a href="./illustrations.html" target="_blank">Load more projects</a>
+			 </div>
+          </li>
+
+        </ul>
+
+      </section>
+	
+	<!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+			
+          <div style="padding-left: 3em">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title" style="font-size: 1.5em">Do you have a Design 
+			  Project in mind?</h2>
+
+          <p class="section-text">
+            It will be a pleasure to discuss future projects! Get in touch and let me know how the services offered can be useful to you. You will receive a response via email within 2 business days.
+          </p>
+
+          <ul class="contact-list">
+			  
+			<li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:leticia.ands@gmail.com" class="contact-info">leticia.ands@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:9374703278" class="contact-info">(937) 470-32-78</a>
+              </div>
+
+            </li>
+			  
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Location:</h3>
+
+                <address class="contact-info">
+                  Currently located in Cincinnati, OH.
+                </address>
+              </div>
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://www.linkedin.com/in/leticia-webdesigner/" class="contact-social-link" target="_blank">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+        </div>
+		</div>
+
+      </section>
+	
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="index.html">
+          &lt;LA&gt;
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 Leticia's Portfolio. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+	
+	<!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
